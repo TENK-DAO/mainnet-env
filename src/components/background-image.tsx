@@ -44,7 +44,7 @@ const StrictBackgroundImage: React.FC<StrictProps> = ({ src, Tag, style, ...prop
       <Tag
         {...props}
         style={{
-          backgroundImage: `url("${svg.svg?.dataURI ?? undefined}")`,
+          backgroundImage: `url({svg.svg?.dataURI ?? undefined})`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'contain',
           backgroundPosition: 'center',
